@@ -1,0 +1,113 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+
+    -webkit-animation-name: bgColorChanger; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+
+    animation-name: bgColorChanger;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+* {
+    cursor: url("../img/cursor2.cur"), auto;
+}
+
+#output {
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #FFF;
+    border-radius: 1em;
+    padding: 1.3em;
+}
+
+#output>div {
+    position: absolute!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+    width: 15vw!important;
+}
+
+a {
+    font: italic 1em sans-serif;
+    color: white;
+    text-decoration: none;
+    cursor: url("../img/cursor.cur"), auto;
+}
+
+h1 {
+    position: absolute!important;
+    top: 23%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+    color: white!important;
+}
+
+p {
+    border: 1px solid white!important;
+    display: inline-block!important;
+    margin: 5px 0px!important;
+    padding: 5px!important;
+}
+span {
+    border-left: 1px dashed white!important;
+    padding: 5px!important;
+    padding-left: 8px!important;
+}
+
+img[src="../img/logo.png"] {
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    animation: logoRotator 10s infinite linear;
+}
+
+footer {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+
+@keyframes bgColorChanger {
+    0%   {background-color: #832712;}
+    25%  {background-color: #4a89bc;}
+    50%  {background-color: #54bc60;}
+    75%  {background-color: #bc8635;}
+    100% {background-color: #832712;}
+}
+
+/* Standard syntax */
+@-webkit-keyframes bgColorChanger {
+    0%   {background-color: #832712;}
+    25%  {background-color: #4a89bc;}
+    50%  {background-color: #54bc60;}
+    75%  {background-color: #bc8635;}
+    100% {background-color: #832712;}
+}
+
+@keyframes logoRotator {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*background-color: #832712; !* RED *!*/
+/*background-color: #4a89bc; !* BLUE *!*/
+/*background-color: #54bc60; !* GREEN *!*/

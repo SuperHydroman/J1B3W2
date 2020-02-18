@@ -1,0 +1,101 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #832712; /* RED */
+    /*background-color: #4a89bc; !* BLUE *!*/
+    /*background-color: #54bc60; !* GREEN *!*/
+}
+
+* {
+    cursor: url("../img/cursor2.cur"), auto;
+}
+
+form {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #FFF;
+    border-radius: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    font: 1.2em sans-serif;
+}
+
+form>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+input {
+    font: 1em sans-serif;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transition: ease-in-out .4s;
+    padding: 4px;
+    border-radius: 1em;
+    cursor: url("../img/cursor3.cur"), auto;
+}
+
+input:focus {
+    background-color: white;
+    color: black;
+}
+
+form button {
+    display: inherit;
+    width: 150px;
+    padding: 13px 0px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font: 1.2em sans-serif;
+    cursor: url("../img/cursor.cur"), auto;
+}
+
+h1 {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+}
+
+#answer {
+    font: 1em sans-serif;
+    color: white;
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span {
+    position: absolute;
+    left: 230px;
+    color: red;
+    width: 100%;
+    display: inline-block;
+}
+
+#errorMessage {
+    position: absolute;
+    right: 169px;
+    bottom: 21px;
+    left: initial;
+}
