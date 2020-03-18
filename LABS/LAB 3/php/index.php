@@ -1,6 +1,6 @@
 <?php
-$user_nameErr = $user_mailErr = "";
 $user_name = $user_mail = "";
+$user_nameErr = $user_mailErr = "";
 $user_nameCheck = $user_mailCheck = false;
 $formCompleted = false;
 
@@ -29,10 +29,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    //  Only displays the answers, when both answers have been filled in!
+    //  Only displays the answers, when both inputs have been filled in!
     if ($user_nameCheck && $user_mailCheck) {
         $formCompleted = true;
     }
+}
+
+
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
 
 if ($formCompleted) {
@@ -40,13 +49,6 @@ if ($formCompleted) {
 }
 else {
     require "form.php";
-}
-
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
 }
 
 ?>

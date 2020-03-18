@@ -14,8 +14,8 @@
         <a href="index.php"><< Another try?</a>
         <img src="../img/logo.png" alt="logo">
         <div>
-            <p>Name <span><?php echo $_POST["user_name"] ?></span></p>
-            <p>E-mail <span><?php echo $_POST["user_mail"] ?></span></p>
+            <p>Name <span><?php echo $user_name ?></span></p>
+            <p>E-mail <span><?php echo $user_mail ?></span></p>
         </div>
         <footer>Gideon van den Herik - All rights reserved &copy;</footer>
     </div>
