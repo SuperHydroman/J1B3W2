@@ -15,19 +15,19 @@
     <div id="header">
         <ul>
             <li><a href="paniek.php">Er heerst paniek...</a></li>
-            <li><span class="noAccess">Onkunde</span></li>
+            <li><a href="onkunde.php">Onkunde</a></li>
         </ul>
     </div>
     <h1>Onkunde</h1>
     <div id="textBlock">
         <p>
-            Er zijn veel mensen die niet kunnen <?php echo $_POST["kunnen"] ?>. Neem nou <?php echo $_POST["persoon"] ?>
-            . Zelfs met de hulp van een <?php echo $_POST["vakantie"] ?> of zelfs <?php echo $_POST["getal"] ?>
-            kan <?php echo $_POST["persoon"] ?> niet <?php echo $_POST["kunnen"] ?>. Dat heeft niet te maken met een
-            gebrek aan <?php echo $_POST["besteEigenschap"] ?>, maar met een te veel
-            aan <?php echo $_POST["slechtsteEigenschap"] ?>. Te veel <?php echo $_POST["slechtsteEigenschap"] ?> leidt
-            tot <?php echo $_POST["overkomen"] ?> en dat is niet goed als je wilt <?php echo $_POST["kunnen"] ?>. Helaas
-            voor <?php echo $_POST["persoon"] ?>.
+            Er zijn veel mensen die niet kunnen <?php echo $kunnen ?>. Neem nou <?php echo $persoon ?>
+            . Zelfs met de hulp van een <?php echo $vakantie ?> of zelfs <?php echo $getal ?>
+            kan <?php echo $persoon ?> niet <?php echo $kunnen ?>. Dat heeft niet te maken met een
+            gebrek aan <?php echo $besteEigenschap ?>, maar met een te veel
+            aan <?php echo $slechtsteEigenschap ?>. Te veel <?php echo $slechtsteEigenschap ?> leidt
+            tot <?php echo $overkomen ?> en dat is niet goed als je wilt <?php echo $kunnen ?>. Helaas
+            voor <?php echo $persoon ?>.
         </p>
     </div>
     <footer>Gideon van den Herik - All rights reserved &copy; | 2020</footer>

@@ -3,6 +3,29 @@ $huisdier = $persoon = $land = $verveling = $speelgoed = $docent = $geld = $bezi
 $huisdierErr = $persoonErr = $landErr = $vervelingErr = $speelgoedErr = $docentErr = $geldErr = $bezigheidErr = "";
 $huisdierCheck = $persoonCheck = $landCheck = $vervelingCheck = $speelgoedCheck = $docentCheck = $geldCheck = $bezigheidCheck = false;
 
+//$dataValues = ["huisdier", "persoon", "land", "verveling", "speelgoed", "docent", "geld", "bezigheid"];
+//$data = $dataErr = [];
+//
+//foreach ($dataValues as $field) {
+//    if (empty($_POST[$field])) {
+//        $dataErr[$field] = "This field is required.";
+//    }
+//    else {
+//        $input = test_input($_POST[$field]);
+//        if (!preg_match("/^[a-zA-Z ]*$/", $input)) {
+//            $dataErr[$field] = "Only letters and white space allowed!";
+//        } else {
+//            $data[$field] = $input;
+//        }
+//    }
+//}
+//
+//if (count($data) == count($dataValues)) {
+//    require "paniekUitkomst.php";
+//} else {
+//    require "paniekForm.php";
+//}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["huisdier"])) {
         $huisdierErr = "This field is required!";

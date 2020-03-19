@@ -20,32 +20,32 @@
     </div>
     <h1>Er heerst paniek...</h1>
     <div id="textBlock">
-        <p>Er heerst paniek in het koninkrijk <?php echo $_POST["land"] ?>. Koning <?php echo $_POST["docent"] ?> is ten einde raad en als koning <?php echo $_POST["docent"] ?> ten
-            einde raad is, dan roept hij zijn ten-einde-raadsheer <?php echo $_POST["persoon"] ?>.
+        <p>Er heerst paniek in het koninkrijk <?php echo $land ?>. Koning <?php echo $docent ?> is ten einde raad en als koning <?php echo $docent ?> ten
+            einde raad is, dan roept hij zijn ten-einde-raadsheer <?php echo $persoon ?>.
         </p>
         <p>
-            "<?php echo $_POST["persoon"] ?>! Het is een ramp! Het is een schande!"
+            "<?php echo $persoon ?>! Het is een ramp! Het is een schande!"
         </p>
         <p>
             "Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?"
         </p>
         <p>
-            "Mijn <?php echo $_POST["huisdier"] ?> is verdwenen! Zo maar, zonder waarschuwing. En ik had net <?php echo $_POST["speelgoed"] ?> voor hem gekocht!"
+            "Mijn <?php echo $huisdier ?> is verdwenen! Zo maar, zonder waarschuwing. En ik had net <?php echo $speelgoed ?> voor hem gekocht!"
         </p>
         <p>
-            "Majesteit, uw <?php echo $_POST["huisdier"] ?> komt vast vanzelf weer terug?"
+            "Majesteit, uw <?php echo $huisdier ?> komt vast vanzelf weer terug?"
         </p>
         <p>
-            "Ja, da's leuk en aardig, maar hoe moet ik in de tussentijd <?php echo $_POST["bezigheid"] ?>?"
+            "Ja, da's leuk en aardig, maar hoe moet ik in de tussentijd <?php echo $bezigheid ?>?"
         </p>
         <p>
-            "Maar Sire, daar kunt u toch uw <?php echo $_POST["geld"] ?> voor gebruiken."
+            "Maar Sire, daar kunt u toch uw <?php echo $geld ?> voor gebruiken."
         </p>
         <p>
-            "<?php echo $_POST["persoon"] ?>, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."
+            "<?php echo $persoon ?>, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."
         </p>
         <p>
-            "<?php echo $_POST["verveling"] ?>, Sire."
+            "<?php echo $verveling ?>, Sire."
         </p>
     </div>
     <footer>Gideon van den Herik - All rights reserved &copy; | 2020</footer>
